@@ -17,3 +17,10 @@ $(function() { // DOMContentLoaded
     }, 2000);
   });
 });
+
+$(function() { // DOMContentLoaded
+  $(".button").on("click", function() {  //event listener
+    $("html, body").animate({
+      scrollTop: $(".container__contact").offset().top //dopisujac -300 bedzie do klasy odjac 300px
+    }, 2000);
+  });
