@@ -1,7 +1,7 @@
 
 function init() {
 	let acc = document.getElementsByClassName("open-button");
-	let toggle = false;
+	var toggle = false;
 	for ( let i = 0; i < acc.length; i++) {
 		acc[i].addEventListener("click", showContent);
 	}
@@ -11,7 +11,7 @@ function init() {
 	} else {
 		document.querySelector('.menu').src = 'images/cancel.png';
 	}
-	toggle != toggle;	
+	toggle = !toggle;	
 		
         this.nextElementSibling.classList.toggle("open-overlay");
 	}
