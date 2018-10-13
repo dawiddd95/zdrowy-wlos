@@ -7,9 +7,9 @@ function init() {
 	}
 	function showContent() {
 	if (toggle == true) {
-		document.querySelector('.menu').src = 'images/menu-options.png';
+		document.querySelector('.menu').src = '../images/menu-options.png';
 	} else {
-		document.querySelector('.menu').src = 'images/cancel.png';
+		document.querySelector('.menu').src = '../images/cancel.png';
 	}
 	toggle = !toggle;	
 		
