@@ -9,7 +9,7 @@ function init() {
 	if (toggle == true) {
 		document.querySelector('.menu').src = 'images/menu-options.png';
 	} else {
-		document.querySelector('.menu').src = 'images/close.png';
+		document.querySelector('.menu').src = 'images/cancel.png';
 	}
 	toggle != toggle;	
 		
