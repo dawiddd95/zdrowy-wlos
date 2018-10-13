@@ -8,8 +8,7 @@
 		<title>Trycholog Lębork - Gabinet Trychologiczny Centrum Zdrowego Włosa</title>
 		<meta name="description" content="Gabinet trychologiczny Centrum Zdrowego Włosa Lębork. Leczenie schorzeń skóry głowy oraz włosów. Kompleksowa konsultacja profesjonalnym sprzętem trychologicznym. Trycholog Lębork">
   		<meta name="keywords" content="trycholog,centrum zdrowego włosa, lębork, trycholog lebork, zdrowe włosy, gabinet trychologiczny, zdrowie i medycyna">
-  		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -31,7 +30,7 @@
 						<a target="_blank" href="https://www.facebook.com/pg/CentrumZdrowegoWlosa/reviews/">
 							Opinie
 						</a>
-						<a href="#Contact">
+						<a href="#Contact" onclick="youScroll.to('.contact-container').start()">
 							Kontakt
 						</a>
 						<a href="https://www.facebook.com/CentrumZdrowegoWlosa/">
@@ -50,7 +49,7 @@
 								<a href="index.html">
 									Strona główna
 								</a>
-								<a class="overlay-content__offer-header" href="#overlay-content__offer-panel">
+								<a class="overlay-content__offer-header" href="#overlay-content__offer-panel"  onclick="youScroll.to('.container__offers').start()">
 									Oferta 
 								</a>
 								<div class="overlay-content__offer-panel">
@@ -398,7 +397,7 @@
 					<p class="text-container__title">Masz dodatkowe pytania ?</p>
 					<p class="text-container__subtitle">Skontaktuj się ze mną</p>
 					<a href="#contact-container">
-						<div class="text-container__button">
+						<div class="text-container__button" onclick="youScroll.to('.contact-container').start()">
 							Formularz kontaktowy
 						</div>
 					</a>	
@@ -496,7 +495,7 @@
 		</div>
 		<script src="scripts/accordions.js"></script>
 		<script src="scripts/fullscreen-navigation.js"></script>
-		<script src="scripts/smooth-scrolling.js"></script>
+		<script src="scripts/youscroll.js"></script>
 		<script src="scripts/offer-menu.js"></script>
 		<script src="scripts/scroll-reveal.js"></script>
 	</body>
