@@ -79,7 +79,7 @@ button {
 
 .page-head {
   width: 100%;
-  height: 700px;
+  height: 100vh;
   background-image: url("../images/da2.jpg");
   object-fit: cover;
   background-attachment: fixed;
@@ -347,6 +347,9 @@ button {
   @media screen and (max-width: 1000px) {
     .company-features {
       padding-bottom: 0; } }
+  @media screen and (min-height: 900px) {
+    .company-features {
+      padding: 80px 0; } }
 
 .company-features__box {
   height: 100%;
@@ -407,6 +410,9 @@ button {
   @media screen and (max-width: 700px) {
     .container__company {
       height: 480px; } }
+  @media screen and (min-height: 900px) {
+    .container__company {
+      height: 680px; } }
 
 .section__gabinet {
   width: 50%;
@@ -420,6 +426,11 @@ button {
   @media screen and (max-width: 768px) {
     .section__gabinet {
       width: 0; } }
+  @media screen and (min-height: 900px) {
+    .section__gabinet {
+      height: 640px; 
+      background-size: cover;
+    } }
 
 .section__about {
   width: 53%;
@@ -444,6 +455,10 @@ button {
   @media screen and (max-width: 383px) {
     .section__about {
       width: 100%; } }
+  @media screen and (min-height: 900px) {
+    .section__about {
+      height: 640px; 
+    } }
 
 .about__content {
   width: 70%;
@@ -577,6 +592,10 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media screen and (min-height: 900px) {
+    .accordion {
+      padding: 80px 0;
+    } }
 
 .accordion__header {
   width: 90%;
@@ -592,6 +611,10 @@ button {
   align-items: center; }
   .accordion__header:hover {
     background-color: #bcafe7; }
+    @media screen and (min-height: 900px) {
+      .accordion__header {
+        height: 70px;
+      } }
 
 .accordion__panel {
   width: 90%;
@@ -638,6 +661,10 @@ button {
   @media screen and (max-width: 500px) {
     .container__extra-questions {
       height: 400px; } }
+  @media screen and (min-height: 900px) {
+    .container__extra-questions {
+      padding: 80px 0;
+    } }
 
 .extra-questions__text-container {
   width: 100%;
@@ -695,6 +722,9 @@ button {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
+  @media screen and (min-height: 900px) {
+    .container__contact {
+      padding: 80px 0; } }
 
 .contact-cards {
   width: 90%;
@@ -721,6 +751,12 @@ button {
       margin-top: 20px;
       margin-bottom: 20px; } }
 
+  @media screen and (min-height: 900px) and (min-width: 1000px) {
+    .contact-cards__card {
+      width: 465px;
+      height: 655px;
+    } }
+
 @media screen and (max-width: 768px) {
   .contact-cards__card:first-child {
     margin-top: 60px;
@@ -738,6 +774,10 @@ button {
   position: relative;
   background-size: cover;
   background-position: cover; }
+  @media screen and (min-height: 900px) {
+    .card__header {
+      height: 250px;
+    } }
 
 .card__header-lebork {
   background-image: url("../images/lebork2.jpg"); }
@@ -753,6 +793,14 @@ button {
   margin-left: 35%;
   margin-top: 40%;
   box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.2); }
+  @media screen and (min-height: 900px) {
+    .location-circle2 {
+      margin: 40% 0 30px 35%;
+    } }
+  @media screen and (min-height: 900px) and (min-width: 1000px) {
+    .location-circle2 {
+      margin: 40% 0 30px 38%;
+    } }
 
 .location__information {
   width: 100%;
@@ -781,7 +829,7 @@ button {
 
 footer {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url("../images/s0.jpg");
   background-color: #d2b38f;
   object-fit: cover;
@@ -799,7 +847,8 @@ footer {
 
 .contact-container {
   width: 90%;
-  height: 100%;
+  height: 50%;
+  margin-top: 60px;
   margin-left: 50px;
   display: flex;
   flex-direction: column;
@@ -815,23 +864,15 @@ footer {
   margin-top: 60px; }
 
 .form__person-data {
-  width: 7.5%;
   margin-bottom: 10px;
   font-size: 20px;
   font-family: "Raleway";
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end; }
-  @media screen and (max-width: 1280px) {
-    .form__person-data {
-      width: 11%; } }
-  @media screen and (max-width: 450px) {
-    .form__person-data {
-      width: 27%; } }
-  @media screen and (max-width: 370px) {
-    .form__person-data {
-      width: 30%; } }
+  .form__person-data img {
+    margin: 0 20px 0 0;
+  }
 
 .person-data__input {
   width: 50%;
@@ -853,29 +894,18 @@ footer {
       width: 90%; } }
 
 .form__message {
-  width: 17%;
   height: 40px;
   padding-top: 30px;
   font-size: 20px;
   font-family: "Raleway";
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center; }
-  @media screen and (max-width: 1280px) {
-    .form__message {
-      width: 20%;
-      height: 40px;
-      margin-top: 20px; } }
-  @media screen and (max-width: 1024px) {
-    .form__message {
-      width: 23%; } }
-  @media screen and (max-width: 450px) {
-    .form__message {
-      width: 55%; } }
-  @media screen and (max-width: 370px) {
-    .form__message {
-      width: 65%; } }
+
+
+      .form__message img {
+        margin: 0 20px 0 0;
+      }
 
 .message__input {
   width: 50%;

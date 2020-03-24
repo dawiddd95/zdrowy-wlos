@@ -257,6 +257,12 @@ a {
   align-items: center;
   justify-content: space-around; }
 
+  @media screen and (min-height: 900px) {
+    .container__therapy {
+      padding: 60px 0;
+    }
+  }
+
 .therapy__headline {
   width: 80%;
   height: 100%;
@@ -366,166 +372,149 @@ a {
   height: 500px;
   display: block; }
 
-footer {
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/s0.jpg");
-  background-color: #d2b38f;
-  object-fit: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start; }
-  @media screen and (max-width: 450px) {
-    footer {
-      height: 550px; } }
-
-.contact-container {
-  width: 90%;
-  height: 100%;
-  margin-left: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start; }
-  @media screen and (max-width: 500px) {
-    .contact-container {
-      margin-left: 20px; } }
-
-.form {
-  width: 100%;
-  height: 350px;
-  margin-top: 60px; }
-
-.form__person-data {
-  width: 7.5%;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-family: "Raleway";
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end; }
-  @media screen and (max-width: 1280px) {
-    .form__person-data {
-      width: 11%; } }
-  @media screen and (max-width: 450px) {
-    .form__person-data {
-      width: 27%; } }
-  @media screen and (max-width: 370px) {
-    .form__person-data {
-      width: 30%; } }
-
-.person-data__input {
-  width: 50%;
-  height: 50px;
-  font-size: 20px;
-  background-color: transparent;
-  color: white;
-  border: none;
-  border-bottom: 2px solid white; }
-  .person-data__input:focus {
-    outline: none;
-    border-bottom: 2px solid white; }
-  @media screen and (max-width: 1024px) {
-    .person-data__input {
-      width: 50%;
-      height: 30px; } }
-  @media screen and (max-width: 700px) {
-    .person-data__input {
-      width: 90%; } }
-
-.form__message {
-  width: 17%;
-  height: 40px;
-  padding-top: 30px;
-  font-size: 20px;
-  font-family: "Raleway";
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  @media screen and (max-width: 1280px) {
-    .form__message {
-      width: 20%;
-      height: 40px;
-      margin-top: 20px; } }
-  @media screen and (max-width: 1024px) {
-    .form__message {
-      width: 23%; } }
-  @media screen and (max-width: 450px) {
-    .form__message {
-      width: 55%; } }
-  @media screen and (max-width: 370px) {
-    .form__message {
-      width: 65%; } }
-
-.message__input {
-  width: 50%;
-  height: 50px;
-  font-size: 20px;
-  background-color: transparent;
-  color: white;
-  border: none;
-  border-bottom: 2px solid white; }
-  .message__input:focus {
-    outline: none;
-    border-bottom: 2px solid white; }
-  @media screen and (max-width: 700px) {
-    .message__input {
-      width: 90%; } }
-
-.send-button {
-  width: 150px;
-  height: 60px;
-  margin-top: 40px;
-  border: 2px solid white;
-  border-radius: 10px;
-  background-color: transparent;
-  color: white;
-  font-family: "Lato";
-  font-size: 20px;
-  transition: 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .send-button:hover {
-    color: black;
-    background-color: white;
-    transition: 0.5s; }
-
-.copyright {
-  width: 22%;
-  height: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: auto;
-  font-size: 18px;
-  font-family: "Lato";
-  color: white;
-  background-color: transparent; }
-  @media screen and (max-width: 1279px) {
-    .copyright {
-      width: 40%; } }
-  @media screen and (max-width: 700px) {
-    .copyright {
-      margin: 0;
-      margin-top: 40px;
-      padding-left: 50px;
-      width: 70%; } }
-  @media screen and (max-width: 450px) {
-    .copyright {
-      width: 90%;
-      padding-top: 30px;
-      padding-bottom: 10px;
-      padding-left: 20px; } }
-
-@supports (-moz-appearance: none) {
   footer {
-    height: 100%; } }
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/s0.jpg");
+    background-color: #d2b38f;
+    object-fit: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media screen and (max-width: 450px) {
+      footer {
+        height: 550px; } }
+  
+  .contact-container {
+    width: 90%;
+    height: 50%;
+    margin-top: 60px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media screen and (max-width: 500px) {
+      .contact-container {
+        margin-left: 20px; } }
+  
+  .form {
+    width: 100%;
+    height: 350px;
+    margin-top: 60px; }
+  
+  .form__person-data {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Raleway";
+    color: white;
+    display: flex;
+    align-items: flex-end; }
+    .form__person-data img {
+      margin: 0 20px 0 0;
+    }
+  
+  .person-data__input {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white; }
+    .person-data__input:focus {
+      outline: none;
+      border-bottom: 2px solid white; }
+    @media screen and (max-width: 1024px) {
+      .person-data__input {
+        width: 50%;
+        height: 30px; } }
+    @media screen and (max-width: 700px) {
+      .person-data__input {
+        width: 90%; } }
+  
+  .form__message {
+    height: 40px;
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: "Raleway";
+    color: white;
+    display: flex;
+    align-items: center; }
+  
+  
+        .form__message img {
+          margin: 0 20px 0 0;
+        }
+  
+  .message__input {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white; }
+    .message__input:focus {
+      outline: none;
+      border-bottom: 2px solid white; }
+    @media screen and (max-width: 700px) {
+      .message__input {
+        width: 90%; } }
+  
+  .send-button {
+    width: 150px;
+    height: 60px;
+    margin-top: 40px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-family: "Lato";
+    font-size: 20px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .send-button:hover {
+      color: black;
+      background-color: white;
+      transition: 0.5s; }
+  
+  .copyright {
+    width: 22%;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    font-size: 18px;
+    font-family: "Lato";
+    color: white;
+    background-color: transparent; }
+    @media screen and (max-width: 1279px) {
+      .copyright {
+        width: 40%; } }
+    @media screen and (max-width: 700px) {
+      .copyright {
+        margin: 0;
+        margin-top: 40px;
+        padding-left: 50px;
+        width: 70%; } }
+    @media screen and (max-width: 450px) {
+      .copyright {
+        width: 90%;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 20px; } }
+  
+  @supports (-moz-appearance: none) {
+    footer {
+      height: 100%; } }
+  
 
 /*# sourceMappingURL=zabiegi.css.map */
